@@ -1,0 +1,151 @@
+\documentclass[a4paper,12pt,titlepage]{article}
+\usepackage[utf8]{inputenc} 
+\usepackage{tikz,pgf}
+\usepackage{indentfirst}
+\usepackage{amsfonts}
+\usepackage[english]{babel}
+%Url e Bookmarks of output PDF 
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=magenta,      
+	urlcolor=cyan,
+%	pdftitle={Document title},
+	bookmarks=true,
+	%pdfpagemode=FullScreen,
+}
+\usepackage{rotating}
+\usepackage{tabularx}
+\usepackage{multirow} 
+\usepackage{lscape}
+\usepackage{tikz}
+%to insert PDF files
+\usepackage[final]{pdfpages}
+%--Packages--
+\usepackage{eurosym}
+\usepackage{graphicx} \usepackage{verbatim}
+\usepackage{graphics}
+\usepackage{tikz,pgf}
+\usepackage{indentfirst}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsmath,amssymb,amsthm,textcomp}
+\usepackage{enumerate}
+\usepackage{multicol}
+\usepackage{tikz}
+\usepackage{geometry}
+\usepackage{mathtools}
+\usepackage{amsmath}
+\usepackage{verbatim}
+\usepackage{amsmath,amssymb,mathrsfs}
+\usepackage{xcolor}
+\usepackage{graphicx,color,listings}
+\frenchspacing 
+\usepackage{geometry}
+\usepackage{rotating}
+\usepackage{caption}
+\usepackage{xcolor}
+\usepackage{listings}
+%Cool maths printing
+\usepackage{amsmath}
+%PseudoCode
+\usepackage{algorithm2e}
+
+
+\begin{document}
+\section*{Heterogeneous Fleet Composition Problem}
+
+\subsection*{Parameters:}
+- $m$ = number of vehicles type; \textit{(index k)}\\
+- $n$ = number of periods of the time horizon; \textit{(index t)}\\
+- $v_{kt}$ = number of vehicles of type $k$ required at time $t\in\left\lbrace 1, . . . ,n_k\right\rbrace $;\\
+-  $v_{k}^{max}$ = maximum number of vehicles of type $k$ required during the time horizon;\quad$\forall k=1,\cdots,m$\\ 
+\begin{equation*}
+v_{k}^{max} = \max_{\forall t=1,\cdots,n}(v_{kt});\quad\forall k=1,\cdots,m
+\end{equation*}
+- $c_F^k$ = Fixed cost related to vehicle type $k$;\quad$\forall k=1,\cdots,m$\\
+- $c_V^k$ = Variable cost related to vehicle type $k$;\quad$\forall k=1,\cdots,m$\\
+- $c_H^k$ = Hiring cost related to vehicle type $k$;\quad$\forall k=1,\cdots,m$\\
+\\
+\subsection*{Variables:}
+- $v_k$= number of vehicles of type $k$ owned in the fleet;\quad$\forall k=1,\cdots,m$\\
+\\
+- $x_{t}^k\quad \forall k=1,\cdots,m;\quad\forall t=1,\cdots,n$\\
+$$x_t^k=
+\bigg \{
+\begin{array}{rl}
+1\quad \text{if}\quad v_{kt}\leq v_k\\
+0\quad \text{if}\quad  v_{kt} > v_k \\
+\end{array}
+$$
+- $y_t^k = x_t^k\cdot v_k\quad \forall k=1,\cdots,m;\quad\forall t=1,\cdots,n_k$\\
+\\
+\subsection*{Assumption:} We assume that the following preliminary condition is satisfied:
+\begin{equation*}
+c_F^k+c_V^k\leq c_H^k\qquad \forall k=1,\cdots,m
+\end{equation*}
+
+
+
+
+
+\newpage
+
+
+
+
+
+
+\section*{Math Formulation}
+
+\begin{equation}
+min\,\,\cdot\sum_{k=1}^{m}nc_F^k\cdot v_k + 
+\sum_{k=1}^{m}\sum_{t=1}^{n} c_V^k\cdot v_{kt}\cdot x_t^k +
+\sum_{k=1}^{m}\sum_{t=1}^{n}c_V^k v_{k}-c_V^k\cdot y_t^k+ 
+\sum_{k=1}^{m}\sum_{t=1}^{n}c_H^k \cdot(v_{kt} - v_{kt}\cdot x_t^k - v_k + y_t^k)
+\tag{1}
+\end{equation}
+\begin{center}
+	s.t
+\end{center}
+\begin{equation*}
+v_k\geq v_{kt} - v_k^{max}\cdot(1-x_t^k)\quad\forall k=1,\cdots,m;\quad\forall t=1,\cdots,n
+\tag{2}
+\end{equation*}
+\begin{equation*}
+v_k\leq v_{kt} + v_k^{max}\cdot x_t^k\quad\forall k=1,\cdots,m;\quad\forall t=1,\cdots,n
+\tag{3}
+\end{equation*}
+\begin{equation*}
+y_t^k\leq v_{kt} \quad\forall k=1,\cdots,m;\quad\forall t=1,\cdots,n
+\tag{4}
+\end{equation*}
+\begin{equation*}
+y_t^k\leq v_k^{max}x_t^k \quad\forall k=1,\cdots,m;\quad\forall t=1,\cdots,n
+\tag{5}
+\end{equation*}
+\begin{equation*}
+y_t^k\geq v_k - v_k^{max}\cdot (1-x_t^k)\quad\forall k=1,\cdots,m;\quad\forall t=1,\cdots,n
+\tag{6}
+\end{equation*}
+\begin{equation*}
+v_k\in\left\lbrace 0,\cdots,v_k^{max}\right\rbrace\quad\forall k=1,\cdots,m
+\tag{7}
+\end{equation*}
+\begin{equation*}
+y_t^k\in\left\lbrace 0,\cdots,v_k^{max}\right\rbrace\quad\forall k=1,\cdots,m;\quad\forall t=1,\cdots,n
+\tag{8}
+\end{equation*}
+\begin{equation*}
+x_t^k\in\left\lbrace 0,1\right\rbrace\quad\forall k=1,\cdots,m;\quad\forall t=1,\cdots,n
+\tag{9}
+\end{equation*}
+Non linearized objective function:\\
+\begin{equation*}
+min\,\,\cdot\sum_{k=1}^{m}nc_F^k\cdot v_k + 
+\sum_{k=1}^{m}\sum_{t=1}^{n} c_V^k\cdot v_{kt}\cdot x_t^k +
+\sum_{k=1}^{m}\sum_{t=1}^{n}c_V^k\cdot v_{k}\cdot (1-x_t^k)+  \sum_{k=1}^{m}\sum_{t=1}^{n}c_H^k\cdot(v_{kt}-v_k)(1-x_t^k)
+\end{equation*}
+\end{document}

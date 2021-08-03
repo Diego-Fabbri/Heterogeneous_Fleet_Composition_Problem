@@ -1,0 +1,199 @@
+Fixed Cost c_F^{1}=350.0
+Fixed Cost c_F^{2}=351.0
+Fixed Cost c_F^{3}=352.0
+Variable Cost c_V^{1}=150.0
+Variable Cost c_V^{2}=151.0
+Variable Cost c_V^{3}=152.0
+Hiring Cost c_V^{1}=800.0
+Hiring Cost c_V^{2}=801.0
+Hiring Cost c_V^{3}=802.0
+Required number of vehicles:
+v{k = 1}{t = 1}=12 
+v{k = 2}{t = 1}=13 
+v{k = 3}{t = 1}=14 
+v{k = 1}{t = 2}=15 
+v{k = 2}{t = 2}=16 
+v{k = 3}{t = 2}=17 
+v{k = 1}{t = 3}=16 
+v{k = 2}{t = 3}=17 
+v{k = 3}{t = 3}=18 
+v{k = 1}{t = 4}=17 
+v{k = 2}{t = 4}=18 
+v{k = 3}{t = 4}=19 
+v{k = 1}{t = 5}=17 
+v{k = 2}{t = 5}=18 
+v{k = 3}{t = 5}=19 
+v{k = 1}{t = 6}=18 
+v{k = 2}{t = 6}=19 
+v{k = 3}{t = 6}=20 
+v{k = 1}{t = 7}=20 
+v{k = 2}{t = 7}=21 
+v{k = 3}{t = 7}=22 
+v{k = 1}{t = 8}=20 
+v{k = 2}{t = 8}=21 
+v{k = 3}{t = 8}=22 
+v{k = 1}{t = 9}=21 
+v{k = 2}{t = 9}=22 
+v{k = 3}{t = 9}=23 
+v{k = 1}{t = 10}=22 
+v{k = 2}{t = 10}=23 
+v{k = 3}{t = 10}=24 
+v{k = 1}{t = 11}=24 
+v{k = 2}{t = 11}=25 
+v{k = 3}{t = 11}=26 
+v{k = 1}{t = 12}=22 
+v{k = 2}{t = 12}=23 
+v{k = 3}{t = 12}=24 
+v{k = 1}{t = 13}=20 
+v{k = 2}{t = 13}=21 
+v{k = 3}{t = 13}=22 
+v{k = 1}{t = 14}=18 
+v{k = 2}{t = 14}=19 
+v{k = 3}{t = 14}=20 
+v{k = 1}{t = 15}=17 
+v{k = 2}{t = 15}=18 
+v{k = 3}{t = 15}=19 
+v{k = 1}{t = 16}=16 
+v{k = 2}{t = 16}=17 
+v{k = 3}{t = 16}=18 
+v{k = 1}{t = 17}=14 
+v{k = 2}{t = 17}=15 
+v{k = 3}{t = 17}=16 
+v{k = 1}{t = 18}=13 
+v{k = 2}{t = 18}=14 
+v{k = 3}{t = 18}=15 
+v{k = 1}{t = 19}=13 
+v{k = 2}{t = 19}=14 
+v{k = 3}{t = 19}=15 
+v{k = 1}{t = 20}=14 
+v{k = 2}{t = 20}=15 
+v{k = 3}{t = 20}=16 
+v{k = 1}{t = 21}=15 
+v{k = 2}{t = 21}=16 
+v{k = 3}{t = 21}=17 
+v{k = 1}{t = 22}=16 
+v{k = 2}{t = 22}=17 
+v{k = 3}{t = 22}=18 
+v{k = 1}{t = 23}=17 
+v{k = 2}{t = 23}=18 
+v{k = 3}{t = 23}=19 
+v{k = 1}{t = 24}=19 
+v{k = 2}{t = 24}=20 
+v{k = 3}{t = 24}=21 
+v{k = 1}{t = 25}=21 
+v{k = 2}{t = 25}=22 
+v{k = 3}{t = 25}=23 
+v{k = 1}{t = 26}=22 
+v{k = 2}{t = 26}=23 
+v{k = 3}{t = 26}=24 
+v{k = 1}{t = 27}=23 
+v{k = 2}{t = 27}=24 
+v{k = 3}{t = 27}=25 
+v{k = 1}{t = 28}=22 
+v{k = 2}{t = 28}=23 
+v{k = 3}{t = 28}=24 
+v{k = 1}{t = 29}=24 
+v{k = 2}{t = 29}=25 
+v{k = 3}{t = 29}=26 
+v{k = 1}{t = 30}=26 
+v{k = 2}{t = 30}=27 
+v{k = 3}{t = 30}=28 
+v{k = 1}{t = 31}=27 
+v{k = 2}{t = 31}=28 
+v{k = 3}{t = 31}=29 
+v{k = 1}{t = 32}=28 
+v{k = 2}{t = 32}=29 
+v{k = 3}{t = 32}=30 
+v{k = 1}{t = 33}=30 
+v{k = 2}{t = 33}=31 
+v{k = 3}{t = 33}=32 
+v{k = 1}{t = 34}=32 
+v{k = 2}{t = 34}=33 
+v{k = 3}{t = 34}=34 
+v{k = 1}{t = 35}=32 
+v{k = 2}{t = 35}=33 
+v{k = 3}{t = 35}=34 
+v{k = 1}{t = 36}=30 
+v{k = 2}{t = 36}=31 
+v{k = 3}{t = 36}=32 
+v{k = 1}{t = 37}=29 
+v{k = 2}{t = 37}=30 
+v{k = 3}{t = 37}=31 
+v{k = 1}{t = 38}=28 
+v{k = 2}{t = 38}=29 
+v{k = 3}{t = 38}=30 
+v{k = 1}{t = 39}=26 
+v{k = 2}{t = 39}=27 
+v{k = 3}{t = 39}=28 
+v{k = 1}{t = 40}=25 
+v{k = 2}{t = 40}=26 
+v{k = 3}{t = 40}=27 
+v{k = 1}{t = 41}=25 
+v{k = 2}{t = 41}=26 
+v{k = 3}{t = 41}=27 
+v{k = 1}{t = 42}=24 
+v{k = 2}{t = 42}=25 
+v{k = 3}{t = 42}=26 
+v{k = 1}{t = 43}=22 
+v{k = 2}{t = 43}=23 
+v{k = 3}{t = 43}=24 
+v{k = 1}{t = 44}=22 
+v{k = 2}{t = 44}=23 
+v{k = 3}{t = 44}=24 
+v{k = 1}{t = 45}=19 
+v{k = 2}{t = 45}=20 
+v{k = 3}{t = 45}=21 
+v{k = 1}{t = 46}=20 
+v{k = 2}{t = 46}=21 
+v{k = 3}{t = 46}=22 
+v{k = 1}{t = 47}=18 
+v{k = 2}{t = 47}=19 
+v{k = 3}{t = 47}=20 
+v{k = 1}{t = 48}=17 
+v{k = 2}{t = 48}=18 
+v{k = 3}{t = 48}=19 
+v{k = 1}{t = 49}=16 
+v{k = 2}{t = 49}=17 
+v{k = 3}{t = 49}=18 
+v{k = 1}{t = 50}=16 
+v{k = 2}{t = 50}=17 
+v{k = 3}{t = 50}=18 
+v{k = 1}{t = 51}=14 
+v{k = 2}{t = 51}=15 
+v{k = 3}{t = 51}=16 
+v{k = 1}{t = 52}=13 
+v{k = 2}{t = 52}=14 
+v{k = 3}{t = 52}=15 
+v_k^(max)'s values are :
+v_{1}^(max)=32
+v_{2}^(max)=33
+v_{3}^(max)=34
+Preliminary Condition is satisfied
+Found incumbent of value 2689061.000000 after 0.05 sec. (0.01 ticks)
+Tried aggregator 1 time.
+MIP Presolve eliminated 771 rows and 307 columns.
+MIP Presolve modified 900 coefficients.
+Reduced MIP has 9 rows, 9 columns, and 21 nonzeros.
+Reduced MIP has 3 binaries, 6 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.11 sec. (0.92 ticks)
+Probing time = 0.00 sec. (0.00 ticks)
+Tried aggregator 1 time.
+MIP Presolve eliminated 9 rows and 9 columns.
+All rows and columns eliminated.
+Presolve time = 0.00 sec. (0.01 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.48 sec. (2.93 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.48 sec. (2.93 ticks)
+
+Model Status = Optimal
+
+Objective value = 2082793.0
+p_[1] = 12.0
+p_[2] = 13.0
+p_[3] = 14.0
